@@ -1,0 +1,11 @@
+[project]
+name = "agent-langchain"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=1.2.15",
+    "langchain-openai>=1.2.0",
+]
