@@ -1,6 +1,5 @@
 from langchain_core.messages import HumanMessage, SystemMessage
 from app.llm.model import get_model
-import os
 
 
 def main():
