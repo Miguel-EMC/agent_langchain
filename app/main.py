@@ -1,5 +1,10 @@
-from app.config import PDF_PATH
-from app.rag import ask_question, build_vector_store, load_pdf_documents, split_documents
+from app.core.config import PDF_PATH
+from app.rag.pipeline import (
+    ask_question,
+    build_vector_store,
+    load_pdf_documents,
+    split_documents,
+)
 
 
 def main() -> None:

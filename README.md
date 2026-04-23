@@ -12,9 +12,14 @@ Proyecto pequeno para exponer:
 
 ```text
 app/
-├── config.py
-├── main.py
-└── rag.py
+├── core/
+│   └── config.py
+├── llm/
+│   └── providers.py
+├── rag/
+│   ├── pipeline.py
+│   └── prompts.py
+└── main.py
 ```
 
 ## Configuracion

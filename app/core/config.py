@@ -7,12 +7,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-BASE_DIR = Path(__file__).resolve().parents[1]
+BASE_DIR = Path(__file__).resolve().parents[2]
+DEFAULT_PDF_PATH = "/home/migueldev/Downloads/LangChain Presentation.pdf"
+
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-5-mini")
 OPENAI_EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
-PDF_PATH = os.getenv("PDF_PATH")
+PDF_PATH = os.getenv("PDF_PATH", DEFAULT_PDF_PATH)
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "1200"))
 CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "200"))
 RETRIEVAL_K = int(os.getenv("RETRIEVAL_K", "4"))
