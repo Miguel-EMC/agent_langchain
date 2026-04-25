@@ -1,11 +1,16 @@
 [project]
 name = "agent-langchain"
 version = "0.1.0"
-description = "Add your description here"
+description = "Proyecto pequeno de RAG con LangChain sobre un PDF local"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "dotenv>=0.9.9",
     "langchain>=1.2.15",
+    "langchain-community>=0.3.31",
     "langchain-openai>=1.2.0",
+    "langchain-text-splitters>=0.3.11",
+    "python-dotenv>=1.1.1",
+    "pypdf>=6.1.1",
+    "langchain-google-genai>=4.2.2",
+    "google-generativeai>=0.8.6",
 ]
