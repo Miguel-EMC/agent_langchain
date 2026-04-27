@@ -13,4 +13,6 @@ dependencies = [
     "pypdf>=6.1.1",
     "langchain-google-genai>=4.2.2",
     "google-generativeai>=0.8.6",
+    "fastapi>=0.136.1",
+    "uvicorn>=0.46.0",
 ]
